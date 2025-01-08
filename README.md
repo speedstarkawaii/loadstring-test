@@ -18,3 +18,4 @@ end)
 you should always return, not just execute. ive **seen** exploits just push the script without scanning for errors. that WILL work in some cases, but if i were to load a say a website for example, it wont work. because you need to load the compiled, if it was a function, compiled function then.
 
 in luac however, you would use `luau_load` to attempt to load the script from the first argument, second argument SHOULD be accepted as a chunk however not much scripts do that so its optional
+
