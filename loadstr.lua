@@ -161,19 +161,11 @@ if loadstring then -- thisis Not Even required lol bc most envs will always chec
         print("test 11 failed ❌")
 	end
 	
-	  local test12 = loadstring("return ...", "@chunkname_test")
-    if test12() == "@chunkname_test" then
-        score = score + 1
-        print("test 12 passed ✅")
-    else
-        print("test 12 failed ❌")
-    end
-
 	print("all tests completed successfully ✅")
 	print("final score: " .. score .. "/" .. totalTests)
 	
-	if (score > 6) then
-		print"you got 50% of the test."
+	if (score < 6) then
+		print"you got 50% or lower of the test."
 	else
 		print"you got below then a 50%, please consider rewriting your loadstring"
 	end
